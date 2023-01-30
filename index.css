@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+/* font */
+@font-face {
+  font-family: Gotham-Bold;
+  src: url(../font/Gotham-font-family-www.Dfonts.org/Gotham/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../font/Gotham-font-family-www.Dfonts.org/Gotham/Gotham-Book.otf);
+}
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../font/Gotham-font-family-www.Dfonts.org/Gotham/Gotham-Medium.otf);
+}
+/* var color */
+:root {
+  --primary-color: #6880f6;
+  --secondary-color: #3898ec;
+  --third-color: #6f767e;
+}
+.bg-light {
+  background-color: none;
+}
+body {
+  font-family: Gotham-Book;
+  background-color: #131212;
+}
+.h1,
+h1 {
+  font-family: Gotham-Bold;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  /* padding: 5px 5px 5px 5px; */
+}
+h2 {
+  font-family: Gotham-Bold;
+  font-size: 40px;
+}
+h5 {
+  font-family: Gotham-Medium;
+  color: var(--primary-color);
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(img/eec071442e9a1b8e017c5a7c1853b880.jpg);
+  /* border: 1px solid white; */
+  width: 45px;
+  height: 30px;
+}
+
+/* a * Home */
+.navbar-light .navbar-nav li.active .nav-link {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 7px;
+  width: 100px;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 10px;
+  transition: 0.5s;
+  font-size: 16px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+.navbar-light .navbar-nav li:last-child .nav-link {
+  margin-right: 0;
+}
+.navbar {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1224px;
+  padding: 1.2rem 2rem;
+  z-index: 1;
+}
+
+/* welcome */
+.welcome {
+  padding-top: 50px;
+}
+.welcome span {
+  color: #7d7c7c;
+}
+.avatar img {
+  margin-top: 20px;
+  width: 100%;
+}
+.welcome p {
+  margin-top: 40px;
+  font-size: 16px;
+}
+.welcome i {
+  font-size: 50px;
+  animation-name: arrowDown;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrowDown {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(200px);
+  }
+}
+/* about */
+.about {
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+}
+.about-avatar {
+  /* text-align: right; */
+}
+.about-avatar img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.about p {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.about-row {
+  padding-top: 50px;
+}
+.about-info span {
+  margin-left: 10px;
+}
+
+/* skills */
+.skills {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.skills-row i {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 100px;
+}
+.skills-row p {
+  font-size: 16px;
+}
+
+/* projects */
+.projects {
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+.projects-row {
+  padding-top: 50px;
+}
+.border-works {
+  width: 100%;
+  height: 300px;
+  background-image: url(Projects/Meipaly/meipaly/image-video/home_slider.jpg);
+  background-position: center();
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 30px;
+}
+.border-works-hexa {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/Hexa.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+}
+.border-works-samar {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/samar.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+}
+.border-works-dinner {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/dinner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+}
+.border-works-bakone {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/favicon.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+}
+.border-works-yoga {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/Yoga.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+}
+.box {
+  text-align: center;
+  opacity: 0;
+  background-color: rgba(230, 43, 74, 0.6);
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  transition: 0.5s;
+}
+.box:hover {
+  opacity: 1;
+}
+.box i {
+  font-size: 40px;
+  background: transparent;
+  padding-top: 50px;
+}
+
+/* contact */
+.contact {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.contact-row {
+  padding-top: 20px;
+}
+.border-contact {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  background-color: var(--third-color);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+.contact-title h5 {
+  color: var(--primary-color);
+  padding-bottom: 10px;
+}
+.contact-title {
+  text-align: left;
+  margin-left: 50px;
+}
+.contact-info h5 {
+  color: var(--primary-color);
+  padding-bottom: 10px;
+}
+.contact-info {
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: left;
+}
+.contact-info span {
+  transition: 0.5s;
+}
+.contact-info span:hover {
+  color: var(--primary-color);
+}
+.contact-info a {
+  text-decoration: none;
+}
+.contact-info li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* footer */
+footer .date {
+  text-align: left;
+}
+.by-me {
+  margin-top: 10px;
+}
+.developer {
+  text-align: right;
+}
+.developer span {
+  color: var(--primary-color);
+}
+.back-to-top a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: var(--primary-color);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.back-to-top i {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
